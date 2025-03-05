@@ -4,6 +4,7 @@ linux-commands for personal useage
 pwd -> show your directory location
 ls -> show file and directory
 ls -ltrh -> show dir items with order
+ls -ltrhA -> show dir items with order and show hidden file 
 cd -> change directory -> cd ~ , cd / , cd.. -> cd folder_name
 mkdir -> make directory -> mkdir folder_name
 rmdir -> remove your directory -> rmdir folder_name
@@ -12,14 +13,20 @@ rm -rf -> force delete -> rm -rf folder_name
 . -> current directory
 .. -> parent direcroty
 touch -> make empty file -> touch file_name
+! you can create a many file with space 
+! you can create a exmple 10 file with this command -> touch file_name{1..10}
+! you can create file in the future with -d swich -> touch -d tomorrow file_name
 cp -> copy file -> cp source destination
 mv -> move file  or change name file -> mv old_name new_name 
 rm -> remove file -> rm_file   
 cat -> show the text file content -> cat file_name
 tac -> reverse cat
+shred -> this command crush you txt and no one can't read your txt file -> shred file_name !!!!danger!!!!
 grep -> find a letter or word in your file -> grep letter text_file
 less -> show a huge file ( or small file ) page by page with control
 | -> connect two command -> command1 | command2 ->grep letter | less 
+echo -> on this mode this allows you to talk your self -> echo hello!
+! echo allows you to quick add string to your txt_file -> "your_sting" > file_name -> "mamad mamad mamad" > file_name 
 nano -> open a text file with nano text Editor -> nano file_name
 vim -> open a text file with vim text Editor -> vim file_name
 head -> show the first line in the file -> head file_name
@@ -37,16 +44,33 @@ sudo -> runs command with root access -> sudo command
 sudo -s -> give you a root access 
 whoami -> show your username
 id -> show informatoin about user
+
+useradd -> add user and don't want password or other parameter
+! for using this command you need to sudo access
 adduser -> make new user -> adduser user_name
 passwd -> change your password -> passwd user_name
 deluser -> delete user -> deluser user_name
-sudo apt update -> update package list 
+su -> change user -> su user_name
+!for exit user_name type (exit)
+
+diff -> shows file change
+diff -u -> shows file unified
+ssh -> this is help you to connect secure with ubuntu server or pc -> networkchuck@your_ip
+clear -> you can clean your terminal from your prev command 
+ln -> you can create link it is also similar to shortcut in windows
+! ln has to model ->
+1 -> Hard link -> ?????????????
+2 ->Soft link -> to create soft link for exmaple location we use -s switch
+ln -s -> ln -s ln -s /home/user/documents/original_file.txt /home/user/desktop/link_to_original.txt -> this is example 
+
+
+
+
+
+sudo apt update -> update package list
 sudo apt upgrade -> upgrade package list
 sudo apt install -> install app or package -> sudo apt install package_name
 sudo apt remove -> remove app or package -> sudo apt remove package_name
-diff -> shows file change
-diff -u -> shows file unified
-
 
 
 
