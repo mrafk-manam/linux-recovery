@@ -1,0 +1,52 @@
+linux-commands for personal useage
+
+
+pwd -> show your directory location
+ls -> show file and directory
+ls -ltrh -> show dir items with order
+cd -> change directory -> cd ~ , cd / , cd.. -> cd folder_name
+mkdir -> make directory -> mkdir folder_name
+rmdir -> remove your directory -> rmdir folder_name
+rm -r -> remove dir with items -> rm -r folder_name 
+rm -rf -> force delete -> rm -rf folder_name
+. -> current directory
+.. -> parent direcroty
+touch -> make empty file -> touch file_name
+cp -> copy file -> cp source destination
+mv -> move file  or change name file -> mv old_name new_name 
+rm -> remove file -> rm_file   
+cat -> show the text file content -> cat file_name
+tac -> reverse cat
+grep -> find a letter or word in your file -> grep letter text_file
+less -> show a huge file ( or small file ) page by page with control
+| -> connect two command -> command1 | command2 ->grep letter | less 
+nano -> open a text file with nano text Editor -> nano file_name
+vim -> open a text file with vim text Editor -> vim file_name
+head -> show the first line in the file -> head file_name
+tail -> show the last line in the file -> tail file_name
+man -> if you use before any command give you a explain
+uname -a -> show the system information
+df -h -> show a space in your hard disk
+free -m -> show a free  space in your hard disk
+uptime -> show how does your system on
+top -> show your active process
+ps aux -> show your run process
+kill -> stop process with id -> kill process_id
+killall -> stop all process with name -> killall process_name
+sudo -> runs command with root access -> sudo command
+sudo -s -> give you a root access 
+whoami -> show your username
+id -> show informatoin about user
+adduser -> make new user -> adduser user_name
+passwd -> change your password -> passwd user_name
+deluser -> delete user -> deluser user_name
+sudo apt update -> update package list 
+sudo apt upgrade -> upgrade package list
+sudo apt install -> install app or package -> sudo apt install package_name
+sudo apt remove -> remove app or package -> sudo apt remove package_name
+diff -> shows file change
+diff -u -> shows file unified
+
+
+
+
